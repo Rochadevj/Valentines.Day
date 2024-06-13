@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 16px;
+    height: 100vh;
+    background: #ffc0cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valentines_card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+.front_img, .inside_img {
+    width: 350px; /* Tamanho reduzido */
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.front_card, .inside_card {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 20px auto; /* Margem reduzida */
+    padding: 16px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 360px; /* Tamanho reduzido */
+    height: 580px; /* Tamanho reduzido */
+}
+
+.inside_card {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.valentines_card:hover .front_card {
+    transform: rotateY(-160deg); 
+}
+
+.valentines_card:hover .front_text {
+    display: none;
+}
+
+.front_text, .inside_text {
+    color: #A60657;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px; /* Fonte reduzida */
+}
+
+.valentines_card audio {
+    display: none;
+}
+
+.valentines_card:hover .front_img {
+    display: none;
+}
+
+.inside_card audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+/* New CSS for the additional image */
+/* New CSS for the additional image */
+/* New CSS for the additional image */
+.additional_image {
+    position: absolute;
+    left: 119px; /* Move far to the left */
+    top: 17%;
+    transform: translateY(-50%);
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.valentines_card:hover .additional_image {
+    opacity: 0; /* Hide image on hover */
+}
+
