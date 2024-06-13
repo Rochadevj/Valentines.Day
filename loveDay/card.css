@@ -114,4 +114,8 @@ body {
     .front_img {
         margin-top: 100px; /* Aumenta o margin-top para descer a imagem */
     }
+
+      .additional_image {
+        left: 100px; /* Move far to the left */
+    }
 }
