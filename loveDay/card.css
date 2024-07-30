@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    padding: 16px;
     height: 100vh;
     background: #ffc0cb;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .valentines_card {
@@ -17,19 +17,19 @@ body {
 }
 
 .front_img {
-    width: 350px; /* Tamanho reduzido */
+    width: 380px;
     margin: 0 auto;
     margin-top: 60px;
-    position: absolute; /* Alterado para absolute */
-    top: 60px; /* Ajuste a posição superior conforme necessário */
-    left: 50%; /* Centraliza a imagem horizontalmente */
-    transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+    position: absolute; 
+    top: 80px; 
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
 .inside_img {
-    width: 350px; /* Tamanho reduzido */
+    width: 300px; 
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -37,13 +37,13 @@ body {
     position: relative;
     overflow: hidden;
     transform-origin: left;
-    margin: 20px auto; /* Margem reduzida */
+    margin: 20px auto;
     padding: 16px;
     background-color: whitesmoke;
     text-align: center;
     box-shadow: 0 24px 40px -8px #ff1493;
-    width: 360px; /* Tamanho reduzido */
-    height: 580px; /* Tamanho reduzido */
+    width: 360px; 
+    height: 600px; 
 }
 
 .inside_card {
@@ -64,15 +64,15 @@ body {
 .front_text {
     color: #A60657;
     font-family: 'Brush Script MT', cursive;
-    font-size: 24px; /* Fonte reduzida */
-    margin-top: 500px; /* Ajuste conforme necessário */
+    font-size: 24px; 
+    margin-top: 485px; 
 }
 
 .inside_text {
     color: #A60657;
     font-family: 'Brush Script MT', cursive;
-    font-size: 24px; /* Fonte reduzida */
-    /* Remove o margin-top para que o texto inside permaneça como estava */
+    font-size: 22px; 
+   
 }
 
 .valentines_card audio {
@@ -91,31 +91,52 @@ body {
 
 .additional_image {
     position: absolute;
-    left: 119px; /* Move far to the left */
+    left: 119px;
     top: 17%;
     transform: translateY(-40%);
-    width: 170px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Arredonda as bordas */
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9); /* Adiciona sombra */
-    border: 4px solid #ffc0cb; /* Adiciona uma borda colorida */
+    width: 150px;
+    height: auto; 
+    border-radius: 16px; 
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.9); 
+    object-fit: cover; 
 }
 
 .valentines_card:hover .additional_image {
-    opacity: 0; /* Hide image on hover */
+    opacity: 0; 
 }
 
 @media (max-width: 480px) {
-    .front_card, .inside_card {
-        width: 331px; /* Tamanho ajustado para telas menores */
-        height: 620px; /* Tamanho ajustado para telas menores */
-    }
-
     .front_img {
-        margin-top: 100px; /* Aumenta o margin-top para descer a imagem */
+        width: 280px;
+        top: 50px; 
     }
 
-      .additional_image {
-        left: 100px; /* Move far to the left */
+    .inside_img {
+        width: 220px; 
+        margin-top: 40px;
+    }
+
+    .front_card, .inside_card {
+        width: 300px; 
+        height: 500px; 
+    }
+
+    .front_text {
+        font-size: 20px; 
+        margin-top: 420px; 
+    }
+
+    .inside_text {
+        font-size: 18px; 
+    }
+
+    .inside_card audio {
+        margin-left: 30px; 
+        margin-right: 20px;
+    }
+
+    .additional_image {
+        left: 100px;
+        width: 130px;
     }
 }
