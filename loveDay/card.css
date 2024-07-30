@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .valentines_card {
@@ -63,16 +64,13 @@ body {
 
 .front_text {
     color: #A60657;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 24px; 
+    font-size: 20px; 
     margin-top: 485px; 
 }
 
 .inside_text {
     color: #A60657;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 22px; 
-   
+    font-size: 19px; 
 }
 
 .valentines_card audio {
