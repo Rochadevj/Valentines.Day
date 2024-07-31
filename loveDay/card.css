@@ -77,6 +77,16 @@ body {
     display: none;
 }
 
+img, .valentines_card img {
+    outline: none;
+}
+
+img:focus, .valentines_card img:focus {
+    outline: none;
+    box-shadow: none; 
+}
+
+
 .valentines_card:hover .front_img {
     display: none;
 }
@@ -173,7 +183,7 @@ body {
 @media (max-width: 480px) {
     .front_img {
         width: 280px;
-        top: 50px; 
+        top: 85px; 
     }
 
     .inside_img {
