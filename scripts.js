@@ -48,3 +48,29 @@ document.addEventListener('DOMContentLoaded', function () {
         audio.volume = volumeBar.value;
     });
 });
+
+const volumeBar = document.querySelector('.volume-bar');
+const volumeIcon = document.getElementById('volume-icon');
+
+volumeBar.addEventListener('input', function() {
+    let volume = parseFloat(this.value);
+    document.getElementById('audio-player').volume = volume;
+});
+
+volumeBar.addEventListener('change', function() {
+    let volume = parseFloat(this.value);
+    updateVolumeIcon(volume);
+});
+
+function updateVolumeIcon(volume) {
+    if (volume === 0) {
+        volumeIcon.textContent = '🔇'; 
+    } else if (volume > 0 && volume <= 0.3) {
+        volumeIcon.textContent = '🔈'; 
+    } else if (volume > 0.3 && volume <= 0.6) {
+        volumeIcon.textContent = '🔉'; 
+    } else {
+        volumeIcon.textContent = '🔊';
+    }
+}
+
