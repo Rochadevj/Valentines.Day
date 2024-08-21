@@ -180,6 +180,47 @@ img:focus, .valentines_card img:focus {
     color: #ff1493;
 }
 
+body.dark-mode {
+    background: #49010a;
+}
+
+.dark-mode .front_text,
+.dark-mode .inside_text,
+.dark-mode .icon {
+    color: 
+    #f017ba; 
+}
+
+.dark-mode .seek-bar::-webkit-slider-thumb,
+.dark-mode .volume-bar::-webkit-slider-thumb {
+    background: #a20137; 
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 100; 
+}
+
+.toggle-dark-mode {
+    background-color: #f07bd3; 
+    border: none;
+    border-radius: 50%; 
+    padding: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-dark-mode:hover {
+    background-color: #a20137; 
+}
+
+.toggle-dark-mode:active {
+    transform: scale(0.9); 
+}
+
+
 @media (max-width: 480px) {
     .front_img {
         width: 280px;
