@@ -1,6 +1,6 @@
 # 💌 Cartão Romântico Interativo
 
-Bem-vindo ao *Cartão Romântico Interativo*! Este projeto é um cartão em formato de cartinha que fiz para a minha namorada. Com um design elegante e funcionalidades interativas, é a maneira perfeita de enviar um presente virtual com amor. ❤️
+Bem-vindo ao *Cartão Romântico Interativo*! Este projeto é um cartão em formato de cartinha que fiz para a minha namorada. Com um design elegante e funcionalidades interativas.
 
 ## 🎨 Recursos
 
